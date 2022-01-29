@@ -1,0 +1,1288 @@
+[
+    {
+        "image": "redis:latest",
+        "replicas": 1,
+        "name": "redis",
+        "ports": [],
+        "args": [],
+        "commands": [],
+        "volumes": [],
+        "env": [],
+        "category": "database",
+        "webapp": false,
+        "memory": 128,
+        "manifest": {
+            "logo": "https://raw.githubusercontent.com/coswarm/coswarm-vault/main/images/redis.png",
+            "title": "Redis (Latest)"
+        }
+    },
+    {
+        "image": "redislabs/redismod",
+        "replicas": 1,
+        "name": "rediswm",
+        "category": "database",
+        "args": [],
+        "commands": [],
+        "ports": [],
+        "volumes": [],
+        "env": [],
+        "webapp": false,
+        "memory": 128,
+        "manifest": {
+            "logo": "https://raw.githubusercontent.com/coswarm/coswarm-vault/main/images/redis.png",
+            "title": "Redis with Modules(Latest)"
+        }
+    },
+    {
+        "image": "mongo:latest",
+        "replicas": 1,
+        "name": "mongo",
+        "category": "database",
+        "args": [],
+        "commands": [],
+        "ports": [],
+        "volumes": [],
+        "env": [],
+        "webapp": false,
+        "memory": 512,
+        "manifest": {
+            "logo": "https://raw.githubusercontent.com/coswarm/coswarm-vault/main/images/mongo.png",
+            "title": "MongoDB (Latest)"
+        }
+    },
+    {
+        "image": "ghost:alpine",
+        "replicas": 1,
+        "name": "ghost",
+        "category": "blog",
+        "ports": [],
+        "volumes": [],
+        "args": [],
+        "commands": [],
+        "httport": 2368,
+        "env": [
+            {
+                "key": "url",
+                "value": "http://ghost.localhost"
+            }
+        ],
+        "webapp": true,
+        "memory": 512,
+        "manifest": {
+            "logo": "https://raw.githubusercontent.com/coswarm/coswarm-vault/main/images/ghost.png",
+            "title": "Ghost (Alpine)"
+        }
+    },
+    {
+        "image": "adguard/adguardhome",
+        "replicas": 1,
+        "name": "adguard",
+        "category": "security",
+        "ports": [],
+        "volumes": [],
+        "args": [],
+        "commands": [],
+        "env": [],
+        "httport": 3000,
+        "webapp": true,
+        "memory": 512,
+        "manifest": {
+            "logo": "https://raw.githubusercontent.com/coswarm/coswarm-vault/main/images/adguard.png",
+            "title": "AdGuard Home"
+        }
+    },
+    {
+        "image": "mongo-express:latest",
+        "replicas": 1,
+        "name": "mongoexpress",
+        "category": "database",
+        "ports": [],
+        "args": [],
+        "commands": [],
+        "volumes": [],
+        "env": [
+            {
+                "key": "ME_CONFIG_BASICAUTH_USERNAME",
+                "value": ""
+            },
+            {
+                "key": "ME_CONFIG_BASICAUTH_PASSWORD",
+                "value": ""
+            },
+            {
+                "key": "ME_CONFIG_MONGODB_ENABLE_ADMIN",
+                "value": "true"
+            },
+            {
+                "key": "ME_CONFIG_MONGODB_ADMINUSERNAME",
+                "value": ""
+            },
+            {
+                "key": "ME_CONFIG_MONGODB_ADMINPASSWORD",
+                "value": ""
+            },
+            {
+                "key": "ME_CONFIG_MONGODB_PORT",
+                "value": "27017"
+            },
+            {
+                "key": "ME_CONFIG_MONGODB_SERVER",
+                "value": "mongo"
+            },
+            {
+                "key": "ME_CONFIG_SITE_BASEURL",
+                "value": "/"
+            }
+        ],
+        "httport": 8081,
+        "webapp": true,
+        "memory": 256,
+        "manifest": {
+            "logo": "https://raw.githubusercontent.com/coswarm/coswarm-vault/main/images/mongo-express.png",
+            "title": "Mongo Express"
+        }
+    },
+    {
+        "image": "gitea/gitea",
+        "replicas": 1,
+        "name": "gitea",
+        "category": "code",
+        "ports": [
+            {
+                "publishedport": 3000,
+                "targetport": 3000
+            },
+            {
+                "publishedport": 22,
+                "targetport": 22
+            }
+        ],
+        "env": [
+            {
+                "key": "USER_UID",
+                "value": "1000"
+            },
+            {
+                "key": "USER_GID",
+                "value": "1000"
+            }
+        ],
+        "volumes": [],
+        "args": [],
+        "commands": [],
+        "httport": 3000,
+        "webapp": true,
+        "memory": 512,
+        "manifest": {
+            "logo": "https://raw.githubusercontent.com/coswarm/coswarm-vault/main/images/gitea.png",
+            "title": "Gitea"
+        }
+    },
+    {
+        "image": "grafana/grafana",
+        "replicas": 1,
+        "name": "grafana",
+        "category": "analytics",
+        "args": [],
+        "commands": [],
+        "ports": [],
+        "volumes": [],
+        "env": [],
+        "httport": 3000,
+        "webapp": true,
+        "memory": 512,
+        "manifest": {
+            "logo": "https://raw.githubusercontent.com/coswarm/coswarm-vault/main/images/grafana.png",
+            "title": "Grafana"
+        }
+    },
+    {
+        "image": "prom/prometheus",
+        "replicas": 1,
+        "name": "prometheus",
+        "category": "analytics",
+        "ports": [],
+        "args": [],
+        "commands": [],
+        "volumes": [],
+        "env": [],
+        "httport": 9090,
+        "webapp": true,
+        "memory": 512,
+        "manifest": {
+            "logo": "https://raw.githubusercontent.com/coswarm/coswarm-vault/main/images/prometheus.png",
+            "title": "Prometheus"
+        }
+    },
+    {
+        "image": "postgres:alpine",
+        "replicas": 1,
+        "name": "postgres",
+        "category": "database",
+        "ports": [],
+        "volumes": [],
+        "args": [],
+        "commands": [],
+        "env": [
+            {
+                "key": "POSTGRES_USER",
+                "value": ""
+            },
+            {
+                "key": "POSTGRES_PASSWORD",
+                "value": ""
+            }
+        ],
+        "webapp": false,
+        "memory": 128,
+        "manifest": {
+            "logo": "https://raw.githubusercontent.com/coswarm/coswarm-vault/main/images/postgresql.png",
+            "title": "PostgreSQL (Alpine)"
+        }
+    },
+    {
+        "image": "mariadb:alpha",
+        "replicas": 1,
+        "name": "mariadb",
+        "category": "database",
+        "ports": [],
+        "args": [],
+        "commands": [],
+        "volumes": [],
+        "env": [
+            {
+                "key": "MYSQL_ROOT_PASSWORD",
+                "value": ""
+            }
+        ],
+        "webapp": false,
+        "memory": 128,
+        "manifest": {
+            "logo": "https://raw.githubusercontent.com/coswarm/coswarm-vault/main/images/mariadb.png",
+            "title": "MariaDB"
+        }
+    },
+    {
+        "image": "electerious/ackee",
+        "replicas": 1,
+        "name": "ackee",
+        "category": "analytics",
+        "ports": [],
+        "volumes": [],
+        "args": [],
+        "commands": [],
+        "env": [
+            {
+                "key": "ACKEE_MONGODB",
+                "value": "mongodb://cos-mongo:27017/ackee"
+            },
+            {
+                "key": "ACKEE_USERNAME",
+                "value": ""
+            },
+            {
+                "key": "ACKEE_PASSWORD",
+                "value": ""
+            },
+            {
+                "key": "ACKEE_ALLOW_ORIGIN",
+                "value": ""
+            }
+        ],
+        "webapp": true,
+        "httport": 3000,
+        "memory": 512,
+        "manifest": {
+            "logo": "https://raw.githubusercontent.com/coswarm/coswarm-vault/main/images/ackee.png",
+            "title": "Ackee"
+        }
+    },
+    {
+        "image": "influxdb:latest",
+        "replicas": 1,
+        "name": "influxdb",
+        "category": "analytics",
+        "ports": [],
+        "volumes": [],
+        "env": [],
+        "args": [],
+        "commands": [],
+        "webapp": true,
+        "httport": 8086,
+        "memory": 256,
+        "manifest": {
+            "logo": "https://raw.githubusercontent.com/coswarm/coswarm-vault/main/images/influxdb.png",
+            "title": "InfluxDB (2)"
+        }
+    },
+    {
+        "image": "marian/rebrow",
+        "replicas": 1,
+        "name": "rebrow",
+        "category": "database",
+        "env": [],
+        "ports": [],
+        "volumes": [],
+        "args": [],
+        "commands": [],
+        "httport": 5001,
+        "webapp": true,
+        "manifest": {
+            "logo": "https://raw.githubusercontent.com/coswarm/coswarm-vault/main/images/redis.png",
+            "title": "Rebrow"
+        }
+    },
+    {
+        "image": "redislabs/redisinsight:latest",
+        "replicas": 1,
+        "name": "redisinsight",
+        "category": "database",
+        "env": [],
+        "ports": [],
+        "volumes": [],
+        "args": [],
+        "commands": [],
+        "httport": 8001,
+        "webapp": true,
+        "memory": 512,
+        "manifest": {
+            "logo": "https://raw.githubusercontent.com/coswarm/coswarm-vault/main/images/redisinsight.png",
+            "title": "Redis Insight"
+        }
+    },
+    {
+        "image": "registry:latest",
+        "replicas": 1,
+        "name": "registry",
+        "category": "docker",
+        "env": [],
+        "ports": [],
+        "volumes": [],
+        "args": [],
+        "commands": [],
+        "httport": 5000,
+        "webapp": true,
+        "manifest": {
+            "logo": "https://raw.githubusercontent.com/coswarm/coswarm-vault/main/images/registry.png",
+            "title": "Docker Registry"
+        }
+    },
+    {
+        "image": "dpage/pgadmin4",
+        "replicas": 1,
+        "name": "pgadmin",
+        "category": "database",
+        "env": [
+            {
+                "key": "PGADMIN_DEFAULT_EMAIL",
+                "value": ""
+            },
+            {
+                "key": "PGADMIN_DEFAULT_PASSWORD",
+                "value": ""
+            }
+        ],
+        "ports": [],
+        "volumes": [],
+        "args": [],
+        "commands": [],
+        "memory": 256,
+        "httport": 80,
+        "webapp": true,
+        "manifest": {
+            "logo": "https://raw.githubusercontent.com/coswarm/coswarm-vault/main/images/postgresql.png",
+            "title": "PgAdmin"
+        }
+    },
+    {
+        "image": "rabbitmq:3-management",
+        "replicas": 1,
+        "name": "rabbitmq",
+        "category": "database",
+        "env": [
+            {
+                "key": "RABBITMQ_DEFAULT_USER",
+                "value": ""
+            },
+            {
+                "key": "RABBITMQ_DEFAULT_PASS",
+                "value": ""
+            }
+        ],
+        "ports": [],
+        "args": [],
+        "commands": [],
+        "volumes": [],
+        "memory": 256,
+        "httport": 15672,
+        "webapp": true,
+        "manifest": {
+            "logo": "https://raw.githubusercontent.com/coswarm/coswarm-vault/main/images/rabbitmq.png",
+            "title": "RabbitMQ"
+        }
+    },
+    {
+        "image": "requarks/wiki:latest",
+        "replicas": 1,
+        "name": "wiki",
+        "category": "documents",
+        "env": [
+            {
+                "key": "DB_TYPE"
+            },
+            {
+                "key": "DB_HOST"
+            },
+            {
+                "key": "DB_PORT"
+            },
+            {
+                "key": "DB_USER"
+            },
+            {
+                "key": "DB_PASS"
+            },
+            {
+                "key": "DB_NAME"
+            }
+        ],
+        "ports": [],
+        "args": [],
+        "commands": [],
+        "volumes": [],
+        "httport": 3000,
+        "webapp": true,
+        "memory": 256,
+        "manifest": {
+            "logo": "https://raw.githubusercontent.com/coswarm/coswarm-vault/main/images/wikijs.png",
+            "title": "Wiki.js"
+        }
+    },
+    {
+        "image": "codercom/code-server:latest",
+        "replicas": 1,
+        "name": "code",
+        "category": "code",
+        "env": [
+            {
+                "key": "DOCKER_USER",
+                "value": ""
+            },
+            {
+                "key": "PASSWORD",
+                "value": ""
+            }
+        ],
+        "ports": [],
+        "volumes": [
+            {
+                "Type": "volume",
+                "Source": "code",
+                "Target": "/home/coswarm/.config"
+            },
+            {
+                "Type": "volume",
+                "Source": "code",
+                "Target": "/home/coswarm/project"
+            }
+        ],
+        "args": [],
+        "commands": [],
+        "httport": 8080,
+        "webapp": true,
+        "memory": 1024,
+        "manifest": {
+            "logo": "https://raw.githubusercontent.com/coswarm/coswarm-vault/main/images/code-server.png",
+            "title": "Code-Server"
+        }
+    },
+    {
+        "image": "drone/drone:latest",
+        "replicas": 1,
+        "name": "drone",
+        "category": "cicd",
+        "env": [
+            {
+                "key": "DRONE_RPC_SECRET",
+                "value": ""
+            },
+            {
+                "key": "DRONE_SERVER_HOST",
+                "value": ""
+            },
+            {
+                "key": "DRONE_SERVER_PROTO",
+                "value": ""
+            }
+        ],
+        "ports": [],
+        "volumes": [
+            {
+                "Type": "volume",
+                "Source": "drone",
+                "Target": "/var/lib/drone"
+            }
+        ],
+        "args": [],
+        "commands": [],
+        "httport": 80,
+        "webapp": true,
+        "memory": 512,
+        "manifest": {
+            "logo": "https://raw.githubusercontent.com/coswarm/coswarm-vault/main/images/drone.png",
+            "title": "Drone"
+        }
+    },
+    {
+        "image": "drone/drone-runner-docker:latest",
+        "replicas": 1,
+        "name": "runner",
+        "category": "cicd",
+        "ports": [],
+        "args": [],
+        "commands": [],
+        "volumes": [
+            {
+                "Type": "bind",
+                "Source": "/var/run/docker.sock",
+                "Target": "/var/run/docker.sock"
+            }
+        ],
+        "env": [
+            {
+                "key": "DRONE_RPC_PROTO",
+                "value": "https"
+            },
+            {
+                "key": "DRONE_RPC_HOST",
+                "value": "drone.company.com"
+            },
+            {
+                "key": "DRONE_RPC_SECRET",
+                "value": "super-duper-secret"
+            },
+            {
+                "key": "DRONE_RUNNER_CAPACITY",
+                "value": "2"
+            },
+            {
+                "key": "DRONE_RUNNER_NAME",
+                "value": "runner"
+            }
+        ],
+        "memory": 512,
+        "manifest": {
+            "logo": "https://raw.githubusercontent.com/coswarm/coswarm-vault/main/images/drone.png",
+            "title": "Drone-Runner"
+        }
+    },
+    {
+        "image": "sourcegraph/server:3.27.4",
+        "replicas": 1,
+        "name": "sourcegraph",
+        "category": "code",
+        "env": [],
+        "ports": [],
+        "args": [],
+        "commands": [],
+        "volumes": [],
+        "httport": 7080,
+        "webapp": true,
+        "memory": 1024,
+        "manifest": {
+            "logo": "https://raw.githubusercontent.com/coswarm/coswarm-vault/main/images/sourcegraph.png",
+            "title": "Sourcegraph"
+        }
+    },
+    {
+        "image": "adminer:latest",
+        "replicas": 1,
+        "name": "adminer",
+        "category": "database",
+        "env": [],
+        "ports": [],
+        "volumes": [],
+        "args": [],
+        "commands": [],
+        "httport": 8080,
+        "webapp": true,
+        "memory": 256,
+        "manifest": {
+            "logo": "https://raw.githubusercontent.com/coswarm/coswarm-vault/main/images/adminer.png",
+            "title": "Adminer"
+        }
+    },
+    {
+        "image": "airsonic/airsonic",
+        "replicas": 1,
+        "name": "airsonic",
+        "category": "media",
+        "env": [],
+        "ports": [],
+        "volumes": [],
+        "args": [],
+        "commands": [],
+        "httport": 4040,
+        "webapp": true,
+        "memory": 512,
+        "manifest": {
+            "logo": "https://raw.githubusercontent.com/coswarm/coswarm-vault/main/images/airsonic.png",
+            "title": "Airsonic"
+        }
+    },
+    {
+        "image": "snowmean/snibox-sqlite:latest",
+        "name": "snibox",
+        "replicas": 1,
+        "category": "code",
+        "env": [],
+        "ports": [],
+        "volumes": [],
+        "args": [],
+        "commands": [],
+        "webapp": true,
+        "httport": 3000,
+        "memory": 256,
+        "manifest": {
+            "logo": "https://raw.githubusercontent.com/coswarm/coswarm-vault/main/images/snibox.png",
+            "title": "Snibox"
+        }
+    },
+    {
+        "image": "authelia/authelia:latest",
+        "name": "authelia",
+        "category": "auth",
+        "replicas": 1,
+        "env": [],
+        "ports": [],
+        "volumes": [],
+        "args": [],
+        "commands": [],
+        "memory": 512,
+        "httport": 9091,
+        "webapp": true,
+        "manifest": {
+            "logo": "https://raw.githubusercontent.com/coswarm/coswarm-vault/main/images/authelia.png",
+            "title": "Authelia"
+        }
+    },
+    {
+        "image": "filebrowser/filebrowser:latest",
+        "name": "filebrowser",
+        "category": "file",
+        "replicas": 1,
+        "env": [],
+        "ports": [],
+        "volumes": [],
+        "args": [],
+        "commands": [],
+        "memory": 512,
+        "webapp": true,
+        "httport": 80,
+        "manifest": {
+            "logo": "https://raw.githubusercontent.com/coswarm/coswarm-vault/main/images/filebrowser.png",
+            "title": "FileBrowser"
+        }
+    },
+    {
+        "image": "verdaccio/verdaccio",
+        "name": "verdaccio",
+        "replicas": 1,
+        "category": "code",
+        "env": [],
+        "volumes": [],
+        "ports": [],
+        "args": [],
+        "commands": [],
+        "httport": 4873,
+        "webapp": true,
+        "memory": 512,
+        "manifest": {
+            "logo": "https://raw.githubusercontent.com/coswarm/coswarm-vault/main/images/verdaccio.png",
+            "title": "Verdaccio"
+        }
+    },
+    {
+        "image": "anonaddy/anonaddy:latest",
+        "name": "anonaddy",
+        "replicas": 1,
+        "category": "email",
+        "env": [
+            {
+                "key": "DB_HOST",
+                "value": ""
+            },
+            {
+                "key": "DB_DATABASE",
+                "value": ""
+            },
+            {
+                "key": "DB_USERNAME",
+                "value": ""
+            },
+            {
+                "key": "DB_PASSWORD",
+                "value": ""
+            },
+            {
+                "key": "REDIS_HOST",
+                "value": ""
+            }
+        ],
+        "volumes": [],
+        "ports": [
+            {
+                "publishedport": 25,
+                "targetport": 25
+            }
+        ],
+        "args": [],
+        "commands": [],
+        "memory": 512,
+        "httport": 8000,
+        "webapp": true,
+        "manifest": {
+            "logo": "https://raw.githubusercontent.com/coswarm/coswarm-vault/main/images/anonaddy.png",
+            "title": "AnonAddy"
+        }
+    },
+    {
+        "image": "rocketchat/rocket.chat:latest",
+        "replicas": 1,
+        "name": "rocketchat",
+        "category": "chat",
+        "env": [
+            {
+                "key": "PORT",
+                "value": "3000"
+            },
+            {
+                "key": "ROOT_URL",
+                "value": "http://rocketchat.localhost"
+            },
+            {
+                "key": "MONGO_URL",
+                "value": "mongodb://cos-mongo:27017/rocketchat"
+            },
+            {
+                "key": "MONGO_OPLOG_URL",
+                "value": "mongodb://cos-mongo:27017/local"
+            },
+            {
+                "key": "MAIL_URL",
+                "value": ""
+            }
+        ],
+        "ports": [],
+        "volumes": [
+            {
+                "Type": "volume",
+                "Source": "rocketchat",
+                "Target": "/app/uploads"
+            }
+        ],
+        "args": [],
+        "commands": [],
+        "memory": 512,
+        "webapp": true,
+        "httport": 3000,
+        "manifest": {
+            "logo": "https://raw.githubusercontent.com/coswarm/coswarm-vault/main/images/rocketchat.png",
+            "title": "Rocket.Chat"
+        }
+    },
+    {
+        "image": "linuxserver/projectsend:latest",
+        "name": "projectsend",
+        "replicas": 1,
+        "env": [],
+        "ports": [],
+        "volumes": [],
+        "args": [],
+        "commands": [],
+        "category": "file",
+        "webapp": true,
+        "httport": 80,
+        "memory": 512,
+        "manifest": {
+            "logo": "https://raw.githubusercontent.com/coswarm/coswarm-vault/main/images/projectsend.png",
+            "title": "ProjectSend"
+        }
+    },
+    {
+        "image": "nextcloud:production",
+        "replicas": 1,
+        "name": "nextcloud",
+        "category": "file",
+        "env": [
+            {
+                "key": "POSTGRES_DB",
+                "value": ""
+            },
+            {
+                "key": "POSTGRES_USER",
+                "value": ""
+            },
+            {
+                "key": "POSTGRES_PASSWORD",
+                "value": ""
+            },
+            {
+                "key": "POSTGRES_HOST",
+                "value": ""
+            },
+            {
+                "key": "NEXTCLOUD_ADMIN_USER",
+                "value": "coswarm"
+            },
+            {
+                "key": "NEXTCLOUD_ADMIN_PASSWORD",
+                "value": "coswarm"
+            },
+            {
+                "key": "NEXTCLOUD_TRUSTED_DOMAINS",
+                "value": "nextcloud.localhost"
+            }
+        ],
+        "volumes": [
+            {
+                "Type": "volume",
+                "Source": "nextcloud",
+                "Target": "/var/www/html"
+            }
+        ],
+        "ports": [],
+        "args": [],
+        "commands": [],
+        "memory": 512,
+        "webapp": true,
+        "httport": 80,
+        "manifest": {
+            "logo": "https://raw.githubusercontent.com/coswarm/coswarm-vault/main/images/nextcloud.png",
+            "title": "Nextcloud"
+        }
+    },
+    {
+        "image": "telegraf:latest",
+        "replicas": 1,
+        "name": "telegraf",
+        "category": "analytics",
+        "env": [],
+        "ports": [],
+        "args": [],
+        "commands": [],
+        "volumes": [
+            {
+                "Type": "bind",
+                "Source": "/var/run/docker.sock",
+                "Target": "/var/run/docker.sock"
+            }
+        ],
+        "memory": 512,
+        "webapp": false,
+        "manifest": {
+            "logo": "https://raw.githubusercontent.com/coswarm/coswarm-vault/main/images/influxdb.png",
+            "title": "Telegraf"
+        }
+    },
+    {
+        "image": "yandex/clickhouse-server",
+        "name": "clickhouse",
+        "replicas": 1,
+        "category": "database",
+        "env": [],
+        "ports": [],
+        "args": [],
+        "commands": [],
+        "volumes": [],
+        "webapp": false,
+        "memory": 512,
+        "manifest": {
+            "logo": "https://raw.githubusercontent.com/coswarm/coswarm-vault/main/images/clickhouse.png",
+            "title": "ClickHouse"
+        }
+    },
+    {
+        "image": "gitlab/gitlab-ce:latest",
+        "name": "gitlab",
+        "replicas": 1,
+        "category": "code",
+        "env": [],
+        "ports": [],
+        "volumes": [
+            {
+                "Type": "volume",
+                "Source": "gitlab-logs",
+                "Target": "/var/log/gitlab"
+            },
+            {
+                "Type": "volume",
+                "Source": "gitlab-configs",
+                "Target": "/etc/gitlab"
+            },
+            {
+                "Type": "volume",
+                "Source": "gitlab-data",
+                "Target": "/var/opt/gitlab"
+            }
+        ],
+        "args": [],
+        "commands": [],
+        "webapp": true,
+        "httport": 80,
+        "memory": 2048,
+        "manifest": {
+            "logo": "https://raw.githubusercontent.com/coswarm/coswarm-vault/main/images/gitlab.png",
+            "title": "Gitlab (CE)"
+        }
+    },
+    {
+        "image": "bitnami/minio:latest",
+        "replicas": 1,
+        "name": "minio",
+        "category": "file",
+        "env": [
+            {
+                "key": "MINIO_ACCESS_KEY",
+                "value": "minio-access-key"
+            },
+            {
+                "key": "MINIO_SECRET_KEY",
+                "value": "minio-secret-key"
+            }
+        ],
+        "volumes": [],
+        "ports": [],
+        "args": [],
+        "commands": [],
+        "webapp": true,
+        "httport": 9000,
+        "memory": 512,
+        "manifest": {
+            "logo": "https://raw.githubusercontent.com/coswarm/coswarm-vault/main/images/minio.png",
+            "title": "Minio"
+        }
+    },
+    {
+        "image": "n8nio/n8n",
+        "replicas": 1,
+        "name": "n8n",
+        "category": "cicd",
+        "env": [
+            {
+                "key": "N8N_BASIC_AUTH_ACTIVE",
+                "value": "true"
+            },
+            {
+                "key": "N8N_BASIC_AUTH_USER",
+                "value": "coswarm"
+            },
+            {
+                "key": "N8N_BASIC_AUTH_PASSWORD",
+                "value": "coswarm"
+            }
+        ],
+        "ports": [],
+        "volumes": [],
+        "args": [],
+        "commands": [],
+        "webapp": true,
+        "httport": 5678,
+        "memory": 256,
+        "manifest": {
+            "logo": "https://raw.githubusercontent.com/coswarm/coswarm-vault/main/images/n8n.png",
+            "title": "N8n - Workflow Automation"
+        }
+    },
+    {
+        "image": "netdata/netdata",
+        "replicas": 1,
+        "name": "netdata",
+        "category": "analytics",
+        "env": [],
+        "ports": [],
+        "volumes": [
+            {
+                "Type": "volume",
+                "Source": "netdata",
+                "Target": "/etc/netdata"
+            },
+            {
+                "Type": "volume",
+                "Source": "netdata-lib",
+                "Target": "/var/lib/netdata"
+            },
+            {
+                "Type": "volume",
+                "Source": "netdata-cache",
+                "Target": "/var/cache/netdata"
+            },
+            {
+                "Type": "bind",
+                "Source": "/etc/passwd",
+                "Target": "/host/etc/passwd"
+            },
+            {
+                "Type": "bind",
+                "Source": "/etc/group",
+                "Target": "/host/etc/group"
+            },
+            {
+                "Type": "bind",
+                "Source": "/proc",
+                "Target": "/host/proc"
+            },
+            {
+                "Type": "bind",
+                "Source": "/sys",
+                "Target": "/host/sys"
+            },
+            {
+                "Type": "bind",
+                "Source": "/etc/os-release",
+                "Target": "/host/etc/os-release"
+            },
+            {
+                "Type": "bind",
+                "Source": "/var/run/docker.sock",
+                "Target": "/var/run/docker.sock"
+            }
+        ],
+        "memory": 256,
+        "args": [],
+        "commands": [],
+        "httport": 19999,
+        "webapp": true,
+        "manifest": {
+            "logo": "https://raw.githubusercontent.com/coswarm/coswarm-vault/main/images/netdata.png",
+            "title": "Netdata"
+        }
+    },
+    {
+        "image": "yugabytedb/yugabyte",
+        "replicas": 1,
+        "name": "yugadb",
+        "category": "database",
+        "env": [],
+        "volumes": [],
+        "ports": [],
+        "args": [
+            "--daemon",
+            "false"
+        ],
+        "commands": [
+            "bin/yugabyted",
+            "start"
+        ],
+        "memory": 256,
+        "webapp": true,
+        "httport": 7000,
+        "manifest": {
+            "logo": "https://raw.githubusercontent.com/coswarm/coswarm-vault/main/images/yugadb.png",
+            "title": "YugabyteDB"
+        }
+    },
+    {
+        "image": "nocodb/nocodb",
+        "replicas": 1,
+        "name": "nocodb",
+        "category": "database",
+        "env": [],
+        "volumes": [],
+        "ports": [],
+        "args": [],
+        "commands": [],
+        "webapp": true,
+        "httport": 8080,
+        "memory": 256,
+        "manifest": {
+            "logo": "https://raw.githubusercontent.com/coswarm/coswarm-vault/main/images/nocodb.png",
+            "title": "NocoDB"
+        }
+    },
+    {
+        "image": "dbeaver/cloudbeaver:latest",
+        "replicas": 1,
+        "name": "cloudbeaver",
+        "category": "database",
+        "env": [],
+        "volumes": [
+            {
+                "Type": "volume",
+                "Source": "cloudbeaver",
+                "Target": "/opt/cloudbeaver/workspace"
+            }
+        ],
+        "args": [],
+        "commands": [],
+        "ports": [],
+        "httport": 8978,
+        "webapp": true,
+        "memory": 256,
+        "manifest": {
+            "logo": "https://raw.githubusercontent.com/coswarm/coswarm-vault/main/images/cloudbeaver.png",
+            "title": "CloudBeaver"
+        }
+    },
+    {
+        "image": "quay.io/nuclio/dashboard:stable-amd64",
+        "replicas": 1,
+        "name": "nuclio",
+        "category": "cicd",
+        "args": [],
+        "volumes": [
+            {
+                "Type": "bind",
+                "Source": "/var/run/docker.sock",
+                "Target": "/var/run/docker.sock"
+            }
+        ],
+        "commands": [],
+        "ports": [],
+        "env": [],
+        "httport": 8070,
+        "webapp": true,
+        "memory": 512,
+        "manifest": {
+            "logo": "https://raw.githubusercontent.com/coswarm/coswarm-vault/main/images/nuclio.png",
+            "title": "Nuclio"
+        }
+    },
+    {
+        "image": "statping/statping:latest",
+        "replicas": 1,
+        "name": "statping",
+        "category": "analytics",
+        "args": [],
+        "volumes": [],
+        "ports": [],
+        "commands": [],
+        "httport": 8080,
+        "webapp": true,
+        "memory": 256,
+        "manifest": {
+            "logo": "https://raw.githubusercontent.com/coswarm/coswarm-vault/main/images/statping.png",
+            "title": "Statping"
+        }
+    },
+    {
+        "image": "docker.io/bitnami/dokuwiki",
+        "replicas": 1,
+        "name": "dokuwiki",
+        "category": "documents",
+        "env": [],
+        "args": [],
+        "volumes": [],
+        "ports": [],
+        "commands": [],
+        "httport": 8080,
+        "webapp": true,
+        "memory": 256,
+        "manifest": {
+            "logo": "https://raw.githubusercontent.com/coswarm/coswarm-vault/main/images/dokuwiki.png",
+            "title": "Dokuwiki (Bitnami)"
+        }
+    },
+    {
+        "image": "bitnami/redmine",
+        "replicas": 1,
+        "name": "redmine",
+        "category": "code",
+        "env": [
+            {
+                "key": "REDMINE_DB_POSTGRES",
+                "value": ""
+            },
+            {
+                "key": "REDMINE_DB_USERNAME",
+                "value": ""
+            },
+            {
+                "key": "REDMINE_DB_NAME",
+                "value": ""
+            }
+        ],
+        "args": [],
+        "volumes": [],
+        "ports": [],
+        "commands": [],
+        "httport": 3000,
+        "webapp": true,
+        "memory": 256,
+        "manifest": {
+            "logo": "https://raw.githubusercontent.com/coswarm/coswarm-vault/main/images/redmine.png",
+            "title": "Redmine (Bitnami)"
+        }
+    },
+    {
+        "image": "docker.io/bitnami/logstash",
+        "replicas": 1,
+        "name": "logstash",
+        "category": "analytics",
+        "env": [],
+        "args": [],
+        "volumes": [],
+        "ports": [],
+        "commands": [],
+        "webapp": false,
+        "memory": 512,
+        "manifest": {
+            "logo": "https://raw.githubusercontent.com/coswarm/coswarm-vault/main/images/logstash.png",
+            "title": "Logstash (Bitnami)"
+        }
+    },
+    {
+        "image": "openproject/community:11",
+        "replicas": 1,
+        "name": "openproject",
+        "category": "analytics",
+        "env": [
+            {
+                "key": "SECRET_KEY_BASE",
+                "value": "secret"
+            }
+        ],
+        "args": [],
+        "volumes": [],
+        "ports": [],
+        "commands": [],
+        "webapp": true,
+        "httport": 80,
+        "memory": 1536,
+        "manifest": {
+            "logo": "https://raw.githubusercontent.com/coswarm/coswarm-vault/main/images/openproject.png",
+            "title": "Openproject"
+        }
+    },
+    {
+        "image": "hasura/graphql-engine:v1.3.3",
+        "replicas": 1,
+        "name": "hasura",
+        "category": "database",
+        "env": [
+            {
+                "key": "HASURA_GRAPHQL_DATABASE_URL",
+                "value": "postgres://postgres:postgrespassword@postgres:5432/postgres"
+            },
+            {
+                "key": "HASURA_GRAPHQL_ENABLE_CONSOLE",
+                "value": "true"
+            },
+            {
+                "key": "HASURA_GRAPHQL_ADMIN_SECRET",
+                "value": "changemeSecret"
+            }
+        ],
+        "args": [],
+        "volumes": [],
+        "ports": [],
+        "commands": [],
+        "webapp": true,
+        "httport": 8080,
+        "memory": 512,
+        "manifest": {
+            "logo": "https://raw.githubusercontent.com/coswarm/coswarm-vault/main/images/hasura.png",
+            "title": "Hasura GraphQL Engine"
+        }
+    }
+]
