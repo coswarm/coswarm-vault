@@ -886,7 +886,7 @@
         }
     },
     {
-        "image": "yandex/clickhouse-server",
+        "image": "clickhouse/clickhouse-server",
         "name": "clickhouse",
         "replicas": 1,
         "category": "database",
