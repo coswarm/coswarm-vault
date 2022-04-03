@@ -398,7 +398,7 @@
         "image": "rabbitmq:3-management",
         "replicas": 1,
         "name": "rabbitmq",
-        "category": "database",
+        "category": "messaging",
         "env": [
             {
                 "key": "RABBITMQ_DEFAULT_USER",
@@ -500,7 +500,7 @@
         "image": "drone/drone:latest",
         "replicas": 1,
         "name": "drone",
-        "category": "cicd",
+        "category": "devops",
         "env": [
             {
                 "key": "DRONE_RPC_SECRET",
@@ -537,7 +537,7 @@
         "image": "drone/drone-runner-docker:latest",
         "replicas": 1,
         "name": "runner",
-        "category": "cicd",
+        "category": "devops",
         "ports": [],
         "args": [],
         "commands": [],
@@ -967,7 +967,7 @@
         "image": "n8nio/n8n",
         "replicas": 1,
         "name": "n8n",
-        "category": "cicd",
+        "category": "devops",
         "env": [
             {
                 "key": "N8N_BASIC_AUTH_ACTIVE",
@@ -1128,7 +1128,7 @@
         "image": "quay.io/nuclio/dashboard:stable-amd64",
         "replicas": 1,
         "name": "nuclio",
-        "category": "cicd",
+        "category": "devops",
         "args": [],
         "volumes": [
             {
@@ -1290,6 +1290,24 @@
         "manifest": {
             "logo": "https://raw.githubusercontent.com/coswarm/coswarm-vault/main/images/uptime-kuma.png",
             "title": "Uptimekuma"
+        }
+    },
+    {
+        "image":"nats:latest",
+        "replicas": 1,
+        "name": "nats",
+        "category": "messaging",
+        "env": [],
+        "args": [],
+        "volumes": [],
+        "ports": [],
+        "commands": [],
+        "webapp": false,
+        "httport": null,
+        "memory": 512,
+        "manifest": {
+            "logo": "https://raw.githubusercontent.com/coswarm/coswarm-vault/main/images/nats.png",
+            "title": "NATS"
         }
     }
 ]
