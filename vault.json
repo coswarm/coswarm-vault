@@ -1149,23 +1149,6 @@
         }
     },
     {
-        "image": "statping/statping:latest",
-        "replicas": 1,
-        "name": "statping",
-        "category": "analytics",
-        "args": [],
-        "volumes": [],
-        "ports": [],
-        "commands": [],
-        "httport": 8080,
-        "webapp": true,
-        "memory": 256,
-        "manifest": {
-            "logo": "https://raw.githubusercontent.com/coswarm/coswarm-vault/main/images/statping.png",
-            "title": "Statping"
-        }
-    },
-    {
         "image": "docker.io/bitnami/dokuwiki",
         "replicas": 1,
         "name": "dokuwiki",
