@@ -1284,5 +1284,29 @@
             "logo": "https://raw.githubusercontent.com/coswarm/coswarm-vault/main/images/hasura.png",
             "title": "Hasura GraphQL Engine"
         }
+    },
+    {
+        "image":"louislam/uptime-kuma:1",
+        "replicas": 1,
+        "name": "uptimekuma",
+        "category": "analytics",
+        "env": [],
+        "args": [],
+        "volumes": [
+            {
+                "Type": "volume",
+                "Source": "uptimekuma",
+                "Target": "/app/data"
+            }
+        ],
+        "ports": [],
+        "commands": [],
+        "webapp": true,
+        "httport": 8080,
+        "memory": 512,
+        "manifest": {
+            "logo": "https://raw.githubusercontent.com/coswarm/coswarm-vault/main/images/uptime-kuma.png",
+            "title": "Uptimekuma"
+        }
     }
 ]
