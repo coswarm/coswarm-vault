@@ -613,7 +613,7 @@
         }
     },
     {
-        "image": "airsonic/airsonic",
+        "image": "airsonicadvanced/airsonic-advanced",
         "replicas": 1,
         "name": "airsonic",
         "category": "media",
