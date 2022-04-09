@@ -13,6 +13,7 @@
         "memory": 128,
         "manifest": {
             "logo": "https://raw.githubusercontent.com/coswarm/coswarm-vault/main/images/redis.png",
+            "description": "Redis is an open source, advanced key-value store. It is often referred to as a data structure server because of its key-value nature.",
             "title": "Redis (Latest)"
         }
     },
@@ -30,6 +31,7 @@
         "memory": 128,
         "manifest": {
             "logo": "https://raw.githubusercontent.com/coswarm/coswarm-vault/main/images/redis.png",
+            "description": "Redis is an open source, advanced key-value store. It is often referred to as a data structure server because of its key-value nature.",
             "title": "Redis with Modules(Latest)"
         }
     },
@@ -47,6 +49,7 @@
         "memory": 512,
         "manifest": {
             "logo": "https://raw.githubusercontent.com/coswarm/coswarm-vault/main/images/mongo.png",
+            "description": "MongoDB is a document-oriented database. It's called a NoSQL database because it stores documents as JSON-encoded objects. MongoDB is a non-relational database, meaning that it does not store documents in tables. Instead, it stores documents in collections called \"collections\".",
             "title": "MongoDB (Latest)"
         }
     },
@@ -70,6 +73,7 @@
         "memory": 512,
         "manifest": {
             "logo": "https://raw.githubusercontent.com/coswarm/coswarm-vault/main/images/ghost.png",
+            "description": "Ghost is a blog platform that is built on the open source Ghost.js framework. It is a fully customizable, open source, self-hosted blogging platform.",
             "title": "Ghost (Alpine)"
         }
     },
@@ -88,6 +92,7 @@
         "memory": 512,
         "manifest": {
             "logo": "https://raw.githubusercontent.com/coswarm/coswarm-vault/main/images/adguard.png",
+            "description": "AdGuard Home is a free and open source web application that protects your personal privacy and lets you control your web browsing.",
             "title": "AdGuard Home"
         }
     },
@@ -139,6 +144,7 @@
         "memory": 256,
         "manifest": {
             "logo": "https://raw.githubusercontent.com/coswarm/coswarm-vault/main/images/mongo-express.png",
+            "description": "Mongo Express is a web application that allows you to manage your MongoDB database from the web.",
             "title": "Mongo Express"
         }
     },
@@ -175,6 +181,7 @@
         "memory": 512,
         "manifest": {
             "logo": "https://raw.githubusercontent.com/coswarm/coswarm-vault/main/images/gitea.png",
+            "description": "Gitea is a self-hosted Git service written in Go.",
             "title": "Gitea"
         }
     },
@@ -193,6 +200,7 @@
         "memory": 512,
         "manifest": {
             "logo": "https://raw.githubusercontent.com/coswarm/coswarm-vault/main/images/grafana.png",
+            "description": "Grafana is a beautiful, easy to use, open source solution for displaying and analyzing IT metrics.",
             "title": "Grafana"
         }
     },
@@ -211,6 +219,7 @@
         "memory": 512,
         "manifest": {
             "logo": "https://raw.githubusercontent.com/coswarm/coswarm-vault/main/images/prometheus.png",
+            "description": "Prometheus is a tool to collect, process and visualize metrics from many different sources.",
             "title": "Prometheus"
         }
     },
@@ -237,6 +246,7 @@
         "memory": 128,
         "manifest": {
             "logo": "https://raw.githubusercontent.com/coswarm/coswarm-vault/main/images/postgresql.png",
+            "description": "PostgreSQL is a powerful, open source object-relational database system.",
             "title": "PostgreSQL (Alpine)"
         }
     },
@@ -259,6 +269,7 @@
         "memory": 128,
         "manifest": {
             "logo": "https://raw.githubusercontent.com/coswarm/coswarm-vault/main/images/mariadb.png",
+            "description": "MariaDB is a free and open-source relational database management system.",
             "title": "MariaDB"
         }
     },
@@ -294,6 +305,7 @@
         "memory": 512,
         "manifest": {
             "logo": "https://raw.githubusercontent.com/coswarm/coswarm-vault/main/images/ackee.png",
+            "description": "Ackee is analytics web application for tracking and analyzing web traffic.",
             "title": "Ackee"
         }
     },
@@ -312,6 +324,7 @@
         "memory": 256,
         "manifest": {
             "logo": "https://raw.githubusercontent.com/coswarm/coswarm-vault/main/images/influxdb.png",
+            "description": "InfluxDB is a time series database.",
             "title": "InfluxDB (2)"
         }
     },
@@ -329,6 +342,7 @@
         "webapp": true,
         "manifest": {
             "logo": "https://raw.githubusercontent.com/coswarm/coswarm-vault/main/images/redis.png",
+            "description": "Rebrow is a Redis-based web application for managing and monitoring Redis instances.",
             "title": "Rebrow"
         }
     },
@@ -347,6 +361,7 @@
         "memory": 512,
         "manifest": {
             "logo": "https://raw.githubusercontent.com/coswarm/coswarm-vault/main/images/redisinsight.png",
+            "description": "RedisInsight is a Redis-based web application for managing and monitoring Redis instances.",
             "title": "Redis Insight"
         }
     },
@@ -364,6 +379,7 @@
         "webapp": true,
         "manifest": {
             "logo": "https://raw.githubusercontent.com/coswarm/coswarm-vault/main/images/registry.png",
+            "description": "Registry is a Docker registry server.",
             "title": "Docker Registry"
         }
     },
@@ -391,6 +407,7 @@
         "webapp": true,
         "manifest": {
             "logo": "https://raw.githubusercontent.com/coswarm/coswarm-vault/main/images/postgresql.png",
+            "description": "PgAdmin is the most popular and feature rich Open Source administration and development platform for PostgreSQL, the most advanced Open Source database in the world.",
             "title": "PgAdmin"
         }
     },
@@ -418,6 +435,7 @@
         "webapp": true,
         "manifest": {
             "logo": "https://raw.githubusercontent.com/coswarm/coswarm-vault/main/images/rabbitmq.png",
+            "description": "RabbitMQ is a high-performance, distributed message broker.",
             "title": "RabbitMQ"
         }
     },
@@ -455,6 +473,7 @@
         "memory": 256,
         "manifest": {
             "logo": "https://raw.githubusercontent.com/coswarm/coswarm-vault/main/images/wikijs.png",
+            "description": "The most powerful and extensible open source Wiki software.",
             "title": "Wiki.js"
         }
     },
@@ -493,6 +512,7 @@
         "memory": 1024,
         "manifest": {
             "logo": "https://raw.githubusercontent.com/coswarm/coswarm-vault/main/images/code-server.png",
+            "description": "Code Server is a free, open source, and cross-platform code editor.",
             "title": "Code-Server"
         }
     },
@@ -530,6 +550,7 @@
         "memory": 512,
         "manifest": {
             "logo": "https://raw.githubusercontent.com/coswarm/coswarm-vault/main/images/drone.png",
+            "description": "Drone is a continuous integration and delivery platform for modern software development.",
             "title": "Drone"
         }
     },
@@ -573,6 +594,7 @@
         "memory": 512,
         "manifest": {
             "logo": "https://raw.githubusercontent.com/coswarm/coswarm-vault/main/images/drone.png",
+            "description": "Drone is a continuous integration and delivery platform for modern software development.",
             "title": "Drone-Runner"
         }
     },
@@ -591,6 +613,7 @@
         "memory": 1024,
         "manifest": {
             "logo": "https://raw.githubusercontent.com/coswarm/coswarm-vault/main/images/sourcegraph.png",
+            "description": "Sourcegraph is a code search and code intelligence platform.",
             "title": "Sourcegraph"
         }
     },
@@ -609,6 +632,7 @@
         "memory": 256,
         "manifest": {
             "logo": "https://raw.githubusercontent.com/coswarm/coswarm-vault/main/images/adminer.png",
+            "description": "Adminer is a full-featured MySQL management tool.",
             "title": "Adminer"
         }
     },
@@ -627,6 +651,7 @@
         "memory": 512,
         "manifest": {
             "logo": "https://raw.githubusercontent.com/coswarm/coswarm-vault/main/images/airsonic.png",
+            "description": "Airsonic is a web-based media server.",
             "title": "Airsonic"
         }
     },
@@ -645,6 +670,7 @@
         "memory": 256,
         "manifest": {
             "logo": "https://raw.githubusercontent.com/coswarm/coswarm-vault/main/images/snibox.png",
+            "description": "Self-hosted snippet manager. Developed to collect and organize code snippets.",
             "title": "Snibox"
         }
     },
@@ -663,6 +689,7 @@
         "webapp": true,
         "manifest": {
             "logo": "https://raw.githubusercontent.com/coswarm/coswarm-vault/main/images/authelia.png",
+            "description": "Authelia is a modern, open-source, self-hosted, multi-tenant, multi-user authentication and authorization server.",
             "title": "Authelia"
         }
     },
@@ -681,6 +708,7 @@
         "httport": 80,
         "manifest": {
             "logo": "https://raw.githubusercontent.com/coswarm/coswarm-vault/main/images/filebrowser.png",
+            "description": "Filebrowser is a web-based file browser.",
             "title": "FileBrowser"
         }
     },
@@ -699,6 +727,7 @@
         "memory": 512,
         "manifest": {
             "logo": "https://raw.githubusercontent.com/coswarm/coswarm-vault/main/images/verdaccio.png",
+            "description": "Verdaccio is a package registry server for npm.",
             "title": "Verdaccio"
         }
     },
@@ -743,6 +772,7 @@
         "webapp": true,
         "manifest": {
             "logo": "https://raw.githubusercontent.com/coswarm/coswarm-vault/main/images/anonaddy.png",
+            "description": "Anonymous Email Forwarding Service.",
             "title": "AnonAddy"
         }
     },
@@ -788,6 +818,7 @@
         "httport": 3000,
         "manifest": {
             "logo": "https://raw.githubusercontent.com/coswarm/coswarm-vault/main/images/rocketchat.png",
+            "description": "Rocket.Chat is a free, open-source, self-hosted, private, secure, and community-driven chat server.",
             "title": "Rocket.Chat"
         }
     },
@@ -806,6 +837,7 @@
         "memory": 512,
         "manifest": {
             "logo": "https://raw.githubusercontent.com/coswarm/coswarm-vault/main/images/projectsend.png",
+            "description": "ProjectSend is a free, secure and user friendly file sharing software",
             "title": "ProjectSend"
         }
     },
@@ -859,6 +891,7 @@
         "httport": 80,
         "manifest": {
             "logo": "https://raw.githubusercontent.com/coswarm/coswarm-vault/main/images/nextcloud.png",
+            "description": "Nextcloud is a cloud-based application server for personal, enterprise and business use.",
             "title": "Nextcloud"
         }
     },
@@ -882,6 +915,7 @@
         "webapp": false,
         "manifest": {
             "logo": "https://raw.githubusercontent.com/coswarm/coswarm-vault/main/images/influxdb.png",
+            "description": "Telegraf is a data collection and analytics system.",
             "title": "Telegraf"
         }
     },
@@ -899,6 +933,7 @@
         "memory": 512,
         "manifest": {
             "logo": "https://raw.githubusercontent.com/coswarm/coswarm-vault/main/images/clickhouse.png",
+            "description": "ClickHouse is a high-performance, distributed SQL database.",
             "title": "ClickHouse"
         }
     },
@@ -933,6 +968,7 @@
         "memory": 2048,
         "manifest": {
             "logo": "https://raw.githubusercontent.com/coswarm/coswarm-vault/main/images/gitlab.png",
+            "description": "GitLab is a free and open source software project management tool.",
             "title": "Gitlab (CE)"
         }
     },
@@ -960,6 +996,7 @@
         "memory": 512,
         "manifest": {
             "logo": "https://raw.githubusercontent.com/coswarm/coswarm-vault/main/images/minio.png",
+            "description": "Minio is a distributed object storage server.",
             "title": "Minio"
         }
     },
@@ -991,6 +1028,7 @@
         "memory": 256,
         "manifest": {
             "logo": "https://raw.githubusercontent.com/coswarm/coswarm-vault/main/images/n8n.png",
+            "description": "n8n helps you to interconnect every app with an API in the world with each other to share and manipulate its data without a single line of code.",
             "title": "N8n - Workflow Automation"
         }
     },
@@ -1055,6 +1093,7 @@
         "webapp": true,
         "manifest": {
             "logo": "https://raw.githubusercontent.com/coswarm/coswarm-vault/main/images/netdata.png",
+            "description": "Netdata is a real-time performance monitoring tool.",
             "title": "Netdata"
         }
     },
@@ -1079,6 +1118,7 @@
         "httport": 7000,
         "manifest": {
             "logo": "https://raw.githubusercontent.com/coswarm/coswarm-vault/main/images/yugadb.png",
+            "description": "YugabyteDB is a fully-managed, high-availability, distributed database.",
             "title": "YugabyteDB"
         }
     },
@@ -1097,6 +1137,7 @@
         "memory": 256,
         "manifest": {
             "logo": "https://raw.githubusercontent.com/coswarm/coswarm-vault/main/images/nocodb.png",
+            "description": " NocoDB is an open source #NoCode platform that turns any database into a smart spreadsheet. ",
             "title": "NocoDB"
         }
     },
@@ -1121,6 +1162,7 @@
         "memory": 256,
         "manifest": {
             "logo": "https://raw.githubusercontent.com/coswarm/coswarm-vault/main/images/cloudbeaver.png",
+            "description": "Cloudbeaver is a cloud-based SQL database management tool.",
             "title": "CloudBeaver"
         }
     },
@@ -1145,6 +1187,7 @@
         "memory": 512,
         "manifest": {
             "logo": "https://raw.githubusercontent.com/coswarm/coswarm-vault/main/images/nuclio.png",
+            "description": "Nuclio is a cloud-native development platform for building and deploying applications.",
             "title": "Nuclio"
         }
     },
@@ -1163,6 +1206,7 @@
         "memory": 256,
         "manifest": {
             "logo": "https://raw.githubusercontent.com/coswarm/coswarm-vault/main/images/dokuwiki.png",
+            "description": "DokuWiki is a free wiki software.",
             "title": "Dokuwiki (Bitnami)"
         }
     },
@@ -1194,6 +1238,7 @@
         "memory": 256,
         "manifest": {
             "logo": "https://raw.githubusercontent.com/coswarm/coswarm-vault/main/images/redmine.png",
+            "description": "Redmine is a project management and issue tracking software.",
             "title": "Redmine (Bitnami)"
         }
     },
@@ -1211,6 +1256,7 @@
         "memory": 512,
         "manifest": {
             "logo": "https://raw.githubusercontent.com/coswarm/coswarm-vault/main/images/logstash.png",
+            "description": "Logstash is a tool for managing logs.",
             "title": "Logstash (Bitnami)"
         }
     },
@@ -1234,6 +1280,7 @@
         "memory": 1536,
         "manifest": {
             "logo": "https://raw.githubusercontent.com/coswarm/coswarm-vault/main/images/openproject.png",
+            "description": "OpenProject is a project management and issue tracking software.",
             "title": "Openproject"
         }
     },
@@ -1265,6 +1312,7 @@
         "memory": 512,
         "manifest": {
             "logo": "https://raw.githubusercontent.com/coswarm/coswarm-vault/main/images/hasura.png",
+            "description": "Hasura is a GraphQL server for PostgreSQL.",
             "title": "Hasura GraphQL Engine"
         }
     },
@@ -1289,6 +1337,7 @@
         "memory": 512,
         "manifest": {
             "logo": "https://raw.githubusercontent.com/coswarm/coswarm-vault/main/images/uptime-kuma.png",
+            "description": "UptimeKuma is a web application for monitoring uptime.",
             "title": "Uptimekuma"
         }
     },
@@ -1307,6 +1356,7 @@
         "memory": 512,
         "manifest": {
             "logo": "https://raw.githubusercontent.com/coswarm/coswarm-vault/main/images/nats.png",
+            "description": "NATS is a lightweight, high-performance message broker.",
             "title": "NATS"
         }
     }
