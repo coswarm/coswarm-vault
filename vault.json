@@ -369,7 +369,7 @@
         "image": "registry:latest",
         "replicas": 1,
         "name": "registry",
-        "category": "docker",
+        "category": "devops",
         "env": [],
         "ports": [],
         "volumes": [],
