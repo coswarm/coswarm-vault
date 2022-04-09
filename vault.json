@@ -285,7 +285,7 @@
         "env": [
             {
                 "key": "ACKEE_MONGODB",
-                "value": "mongodb://cos-mongo:27017/ackee"
+                "value": "mongodb://mongo:27017/ackee"
             },
             {
                 "key": "ACKEE_USERNAME",
@@ -792,11 +792,11 @@
             },
             {
                 "key": "MONGO_URL",
-                "value": "mongodb://cos-mongo:27017/rocketchat"
+                "value": "mongodb://mongo:27017/rocketchat"
             },
             {
                 "key": "MONGO_OPLOG_URL",
-                "value": "mongodb://cos-mongo:27017/local"
+                "value": "mongodb://mongo:27017/local"
             },
             {
                 "key": "MAIL_URL",
