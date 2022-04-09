@@ -1359,5 +1359,24 @@
             "description": "NATS is a lightweight, high-performance message broker.",
             "title": "NATS"
         }
+    },
+    {
+        "image":"scylladb/scylla:latest",
+        "replicas": 1,
+        "name": "scylla",
+        "category": "database",
+        "env": [],
+        "args": [],
+        "volumes": [],
+        "ports": [],
+        "commands": [],
+        "webapp": false,
+        "httport": null,
+        "memory": 512,
+        "manifest": {
+            "logo": "https://raw.githubusercontent.com/coswarm/coswarm-vault/main/images/scylladb.webp",
+            "description": "ScyllaDB is a high-performance NoSQL database system, fully compatible with Apache Cassandra.",
+            "title": "ScyllaDB"
+        }
     }
 ]
