@@ -512,7 +512,7 @@
         "memory": 1024,
         "manifest": {
             "logo": "https://raw.githubusercontent.com/coswarm/coswarm-vault/main/images/code-server.png",
-            "description": "Code Server is a free, open source, and cross-platform code editor.",
+            "description": "Run VS Code on any machine anywhere and access it in the browser.",
             "title": "Code-Server"
         }
     },
