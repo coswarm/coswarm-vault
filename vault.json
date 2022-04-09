@@ -1378,5 +1378,35 @@
             "description": "ScyllaDB is a high-performance NoSQL database system, fully compatible with Apache Cassandra.",
             "title": "ScyllaDB"
         }
+    },
+    {
+        "image":"1dev/server:latest",
+        "replicas": 1,
+        "name": "onedev",
+        "category": "devops",
+        "env": [],
+        "args": [],
+        "volumes": [
+            {
+                "Type": "volume",
+                "Source": "onedev",
+                "Target": "/opt/onedev"
+            },
+            {
+                "Type": "bind",
+                "Source": "/var/run/docker.sock",
+                "Target": "/var/run/docker.sock"
+            }
+        ],
+        "ports": [],
+        "commands": [],
+        "webapp": true,
+        "httport": 6610,
+        "memory": 2048,
+        "manifest": {
+            "logo": "https://raw.githubusercontent.com/coswarm/coswarm-vault/main/images/onedev.png",
+            "description": "Onedev is a Self-hosted Git Server with Kanban and CI/CD ",
+            "title": "Onedev"
+        }
     }
 ]
