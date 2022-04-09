@@ -49,7 +49,7 @@
         "memory": 512,
         "manifest": {
             "logo": "https://raw.githubusercontent.com/coswarm/coswarm-vault/main/images/mongo.png",
-            "description": "MongoDB is a document-oriented database. It's called a NoSQL database because it stores documents as JSON-encoded objects. MongoDB is a non-relational database, meaning that it does not store documents in tables. Instead, it stores documents in collections called \"collections\".",
+            "description": "MongoDB is a document-oriented database. It's called a NoSQL database because it stores documents as JSON-encoded objects.",
             "title": "MongoDB"
         }
     },
