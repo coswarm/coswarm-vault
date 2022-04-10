@@ -1285,7 +1285,7 @@
         }
     },
     {
-        "image": "hasura/graphql-engine:v1.3.3",
+        "image": "hasura/graphql-engine:latest",
         "replicas": 1,
         "name": "hasura",
         "category": "database",
