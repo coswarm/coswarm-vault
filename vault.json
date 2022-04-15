@@ -1429,5 +1429,56 @@
             "description": "Open Source Continuous Profiling Platform.Debug performance issues down to a single line of code",
             "title": "Pyroscope"
         }
+    },
+    {
+        "image":"gcr.io/cadvisor/cadvisor:v0.44.0",
+        "replicas": 1,
+        "name": "cadvisor",
+        "category": "analytics",
+        "env": [],
+        "args": [
+            "--detach",
+            "true",
+            "--privileged",
+            "--device",
+            "/dev/kmsg"
+        ],
+        "volumes": [
+            {
+                "Type": "bind",
+                "Source": "/dev/disk",
+                "Target": "/dev/disk"
+            },
+            {
+                "Type": "bind",
+                "Source": "/",
+                "Target": "/rootfs"
+            },
+            {
+                "Type":"bind",
+                "Source": "/var/run",
+                "Target": "/var/run"
+            },
+            {
+                "Type": "bind",
+                "Source": "/sys",
+                "Target": "/sys"
+            },
+            {
+                "Type": "bind",
+                "Source": "/var/lib/docker",
+                "Target": "/var/lib/docker"
+            }
+        ],
+        "ports": [],
+        "commands": [],
+        "webapp": true,
+        "httport": 8080,
+        "memory": 512,
+        "manifest": {
+            "logo": "https://raw.githubusercontent.com/coswarm/coswarm-vault/main/images/cadvisor.png",
+            "description": "CAdvisor is a tool that collects, aggregates and visualizes container information from Docker.",
+            "title": "cAdvisor"
+        }
     }
 ]
