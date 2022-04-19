@@ -186,7 +186,7 @@
         }
     },
     {
-        "image": "grafana/grafana",
+        "image": "grafana/grafana:latest",
         "replicas": 1,
         "name": "grafana",
         "category": "analytics",
