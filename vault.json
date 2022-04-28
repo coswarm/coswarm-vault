@@ -1502,5 +1502,75 @@
             "description": "RavenDB is a high-performance, high-reliability document database for .NET, Java, and .NET Core.",
             "title": "RavenDB"
         }
+    },
+    {
+        "image":"owncloud/server:latest",
+        "replicas": 1,
+        "name": "owncloud",
+        "category": "storage",
+        "env": [
+            {
+                "name": "OWNCLOUD_DOMAIN",
+                "value": "owncloud.coswarm.dev"
+            },
+            {
+                "name": "OWNCLOUD_DB_TYPE",
+                "value": "mysql"
+            },
+            {
+                "name": "OWNCLOUD_DB_NAME",
+                "value": "owncloud"
+            },
+            {
+                "name": "OWNCLOUD_DB_USERNAME",
+                "value": "owncloud"
+            },
+            {
+                "name": "OWNCLOUD_DB_PASSWORD",
+                "value": "owncloud"
+            },
+            {
+                "name": "OWNCLOUD_DB_HOST",
+                "value": "mariadb"
+            },
+            {
+                "name": "OWNCLOUD_ADMIN_USERNAME",
+                "value": "admin"
+            },
+            {
+                "name": "OWNCLOUD_ADMIN_PASSWORD",
+                "value": "admin"
+            },
+            {
+                "name": "OWNCLOUD_MYSQL_UTF8MB4",
+                "value": "true"
+            },
+            {
+                "name": "OWNCLOUD_REDIS_ENABLED",
+                "value": "true"
+            },
+            {
+                "name": "OWNCLOUD_REDIS_HOST",
+                "value": "redis"
+            }
+        ],
+        "volumes": [
+            {
+                "Type": "volume",
+                "Source": "owncloud-data",
+                "Target": "/mnt/data"
+            }
+        ],
+        "ports": [],
+        "commands": [],
+        "args": [],
+        "webapp": true,
+        "httport": 8080,
+        "memory": 512,
+        "manifest": {
+            "logo": "https://raw.githubusercontent.com/coswarm/coswarm-vault/main/images/owncloud.png",
+            "description": "OwnCloud is a file-sharing app that allows you to share your files with others. It is a fully-featured, open-source, and easy-to-use file-sharing solution.",
+            "title": "OwnCloud"
+        }
     }
 ]
