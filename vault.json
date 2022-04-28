@@ -1473,5 +1473,34 @@
             "description": "CAdvisor is a tool that collects, aggregates and visualizes container information from Docker.",
             "title": "cAdvisor"
         }
+    },
+    {
+        "image":"ravendb/ravendb:4.1-ubuntu-latest",
+        "replicas": 1,
+        "name": "ravendb",
+        "category": "database",
+        "env": [],
+        "volumes": [
+            {
+                "Type": "volume",
+                "Source": "ravendb-settings",
+                "Target": "/opt/RavenDB/config"
+            },
+            {
+                "Type": "volume",
+                "Source": "ravendb-data",
+                "Target": "/opt/RavenDB/Server/RavenData"
+            }
+        ],
+        "ports": [],
+        "commands": [],
+        "webapp": true,
+        "httport": 8080,
+        "memory": 512,
+        "manifest": {
+            "logo": "https://raw.githubusercontent.com/coswarm/coswarm-vault/main/images/ravendb.png",
+            "description": "RavenDB is a high-performance, high-reliability document database for .NET, Java, and .NET Core.",
+            "title": "RavenDB"
+        }
     }
 ]
