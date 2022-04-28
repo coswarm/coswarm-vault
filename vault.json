@@ -696,7 +696,7 @@
     {
         "image": "filebrowser/filebrowser:latest",
         "name": "filebrowser",
-        "category": "file",
+        "category": "storage",
         "replicas": 1,
         "env": [],
         "ports": [],
@@ -825,13 +825,13 @@
     {
         "image": "linuxserver/projectsend:latest",
         "name": "projectsend",
+        "category": "storage",
         "replicas": 1,
         "env": [],
         "ports": [],
         "volumes": [],
         "args": [],
         "commands": [],
-        "category": "file",
         "webapp": true,
         "httport": 80,
         "memory": 512,
@@ -845,7 +845,7 @@
         "image": "nextcloud:production",
         "replicas": 1,
         "name": "nextcloud",
-        "category": "file",
+        "category": "storage",
         "env": [
             {
                 "key": "POSTGRES_DB",
@@ -976,7 +976,7 @@
         "image": "bitnami/minio:latest",
         "replicas": 1,
         "name": "minio",
-        "category": "file",
+        "category": "storage",
         "env": [
             {
                 "key": "MINIO_ACCESS_KEY",
