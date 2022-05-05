@@ -1572,5 +1572,23 @@
             "description": "OwnCloud is a file-sharing app that allows you to share your files with others. It is a fully-featured, open-source, and easy-to-use file-sharing solution.",
             "title": "OwnCloud"
         }
+    },
+    {
+        "image":"jaegertracing/all-in-one",
+        "replicas": 1,
+        "name": "jaeger",
+        "category": "analytics",
+        "env": [],
+        "volumes": [],
+        "ports": [],
+        "commands": [],
+        "webapp": false,
+        "httport": null,
+        "memory": 512,
+        "manifest": {
+            "logo": "https://raw.githubusercontent.com/coswarm/coswarm-vault/main/images/jaeger.png",
+            "description": "Jaeger is a distributed tracing system that collects and aggregates distributed traces from a variety of distributed systems.",
+            "title": "Jaeger"
+        }
     }
 ]
