@@ -973,17 +973,17 @@
         }
     },
     {
-        "image": "bitnami/minio:latest",
+        "image": "minio/minio:latest",
         "replicas": 1,
         "name": "minio",
         "category": "storage",
         "env": [
             {
-                "key": "MINIO_ACCESS_KEY",
+                "key": "MINIO_ROOT_USER",
                 "value": "minio-access-key"
             },
             {
-                "key": "MINIO_SECRET_KEY",
+                "key": "MINIO_ROOT_PASSWORD",
                 "value": "minio-secret-key"
             }
         ],
