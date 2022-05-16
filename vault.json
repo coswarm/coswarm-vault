@@ -989,10 +989,10 @@
         ],
         "volumes": [],
         "ports": [],
-        "args": [],
+        "args": ["server","/data","--console-address",":9001"],
         "commands": [],
         "webapp": true,
-        "httport": 9000,
+        "httport": 9001,
         "memory": 512,
         "manifest": {
             "logo": "https://raw.githubusercontent.com/coswarm/coswarm-vault/main/images/minio.png",
