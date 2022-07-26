@@ -1510,47 +1510,47 @@
         "category": "storage",
         "env": [
             {
-                "name": "OWNCLOUD_DOMAIN",
+                "key": "OWNCLOUD_DOMAIN",
                 "value": "owncloud.coswarm.dev"
             },
             {
-                "name": "OWNCLOUD_DB_TYPE",
+                "key": "OWNCLOUD_DB_TYPE",
                 "value": "mysql"
             },
             {
-                "name": "OWNCLOUD_DB_NAME",
+                "key": "OWNCLOUD_DB_NAME",
                 "value": "owncloud"
             },
             {
-                "name": "OWNCLOUD_DB_USERNAME",
+                "key": "OWNCLOUD_DB_USERNAME",
                 "value": "owncloud"
             },
             {
-                "name": "OWNCLOUD_DB_PASSWORD",
+                "key": "OWNCLOUD_DB_PASSWORD",
                 "value": "owncloud"
             },
             {
-                "name": "OWNCLOUD_DB_HOST",
+                "key": "OWNCLOUD_DB_HOST",
                 "value": "mariadb"
             },
             {
-                "name": "OWNCLOUD_ADMIN_USERNAME",
+                "key": "OWNCLOUD_ADMIN_USERNAME",
                 "value": "admin"
             },
             {
-                "name": "OWNCLOUD_ADMIN_PASSWORD",
+                "key": "OWNCLOUD_ADMIN_PASSWORD",
                 "value": "admin"
             },
             {
-                "name": "OWNCLOUD_MYSQL_UTF8MB4",
+                "key": "OWNCLOUD_MYSQL_UTF8MB4",
                 "value": "true"
             },
             {
-                "name": "OWNCLOUD_REDIS_ENABLED",
+                "key": "OWNCLOUD_REDIS_ENABLED",
                 "value": "true"
             },
             {
-                "name": "OWNCLOUD_REDIS_HOST",
+                "key": "OWNCLOUD_REDIS_HOST",
                 "value": "redis"
             }
         ],
@@ -1566,7 +1566,7 @@
         "args": [],
         "webapp": true,
         "httport": 8080,
-        "memory": 512,
+        "memory": 1024,
         "manifest": {
             "logo": "https://raw.githubusercontent.com/coswarm/coswarm-vault/main/images/owncloud.png",
             "description": "OwnCloud is a file-sharing app that allows you to share your files with others. It is a fully-featured, open-source, and easy-to-use file-sharing solution.",
