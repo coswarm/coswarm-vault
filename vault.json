@@ -989,7 +989,12 @@
         ],
         "volumes": [],
         "ports": [],
-        "args": ["server","/data","--console-address",":9001"],
+        "args": [
+            "server",
+            "/data",
+            "--console-address",
+            ":9001"
+        ],
         "commands": [],
         "webapp": true,
         "httport": 9001,
@@ -1431,7 +1436,7 @@
         }
     },
     {
-        "image":"gcr.io/google-containers/cadvisor:latest",
+        "image": "gcr.io/google-containers/cadvisor:latest",
         "replicas": 1,
         "name": "cadvisor",
         "category": "analytics",
@@ -1448,7 +1453,7 @@
                 "Target": "/rootfs"
             },
             {
-                "Type":"bind",
+                "Type": "bind",
                 "Source": "/var/run",
                 "Target": "/var/run"
             },
@@ -1475,7 +1480,7 @@
         }
     },
     {
-        "image":"ravendb/ravendb:4.1-ubuntu-latest",
+        "image": "ravendb/ravendb:4.1-ubuntu-latest",
         "replicas": 1,
         "name": "ravendb",
         "category": "database",
@@ -1504,7 +1509,7 @@
         }
     },
     {
-        "image":"owncloud/server:latest",
+        "image": "owncloud/server:latest",
         "replicas": 1,
         "name": "owncloud",
         "category": "storage",
@@ -1574,7 +1579,7 @@
         }
     },
     {
-        "image":"jaegertracing/all-in-one",
+        "image": "jaegertracing/all-in-one",
         "replicas": 1,
         "name": "jaeger",
         "category": "analytics",
@@ -1589,6 +1594,30 @@
             "logo": "https://raw.githubusercontent.com/coswarm/coswarm-vault/main/images/jaeger.png",
             "description": "Jaeger is a distributed tracing system that collects and aggregates distributed traces from a variety of distributed systems.",
             "title": "Jaeger"
+        }
+    },
+    {
+        "image": "ghcr.io/tigerbeetledb/tigerbeetle",
+        "replicas": 1,
+        "name": "tigerbeetle",
+        "category": "database",
+        "env": [],
+        "volumes": [
+            {
+                "Type": "volume",
+                "Source": "tigerbeetle-data",
+                "Target": "/data"
+            }
+        ],
+        "ports": [],
+        "commands": [],
+        "webapp": false,
+        "httport": null,
+        "memory": 512,
+        "manifest": {
+            "logo": "https://raw.githubusercontent.com/coswarm/coswarm-vault/main/images/tigerbeetle.png",
+            "description": "TigerBeetle is a distributed financial accounting database designed for mission critical safety and performance.",
+            "title": "TigerBeetle"
         }
     }
 ]
